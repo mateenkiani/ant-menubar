@@ -1,0 +1,54 @@
+{
+  "name": "responsive-ant-menu",
+  "version": "1.0.14",
+  "description": "A lightweight React component for Ant Menu to support responsive behaviour.",
+  "main": "dist/ResponsiveAntMenu.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d examples/dist",
+    "publish-demo": "npm run build && npm run deploy"
+  },
+  "keywords": [
+    "responsive",
+    "ant",
+    "menu"
+  ],
+  "author": "Tomáš Piešťanský <https://tomas.piestansky.cz>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/id-kemo/responsive-ant-menu"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "antd": "^3.26.18",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "css-loader": "^2.1.1",
+    "gh-pages": "^2.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash.throttle": "^4.1.1",
+    "mini-css-extract-plugin": "^0.6.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "peerDependencies": {
+    "antd": "^3.16.6",
+    "lodash.throttle": "^4.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
